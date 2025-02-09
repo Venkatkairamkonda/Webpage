@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Party Night Registration</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; background-color: #6a0dad; color: white; }
+        form { display: inline-block; text-align: left; background: rgba(255, 255, 255, 0.2); padding: 20px; border-radius: 40px; }
+        input, select, button { display: block; margin: 10px 20px; padding: 10px; width: 180px; border: none; border-radius: 40px; }
+        input, select { background: white; color: black; }
+        button { background-color: #ff2f00;width: 200px; color: white; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #e04e2f; }
+    </style>
+</head>
+<body style="background: radial-gradient(circle, rgb(192, 100, 204), rgb(75, 7, 85));; color: #1a065e;">
+    <h1>Electro Party Night Registration</h1>
+    <p>Join us for an electrifying night of music and fun!</p>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="emailid" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="number" id="phone" name="phone" required>
+        
+        <label for="payment">Payment Option:</label>
+        <select id="payment" name="payment" required>
+            <option value="credit_card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank_transfer">Bank Transfer</option>
+        </select>
+        <button type="submit">Register Now</button>
+    </form>
+</body>
+</html>
